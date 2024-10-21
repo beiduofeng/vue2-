@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <header></header>
-    <footer></footer>
+    <AppHeader />
+    <router-view />
+    <!-- v-show='$route.meta.show' -->
+    <appFooter />
   </div>
 </template>
 
 <script>
-import header from './components/header/index.vue'
+import AppHeader from './components/header/index.vue'
 import footer from './components/footer/index.vue'
 
 export default {
   name: 'App',
   components: {
-    header,
-    footer,
+    AppHeader,
+    appFooter: footer,
   }
 }
 </script>

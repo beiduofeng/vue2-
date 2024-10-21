@@ -1,19 +1,20 @@
 <template>
     <div>
-        <div class="footer">footer</div>
+        <div class="foot">footer</div>
 
     </div>
 </template>
 <script>
 export default {
-    name: "footer",
+    name: "app-footer",
 
 }
 </script>
 <style scoped>
-#footer {
+.foot {
     width: 100%;
-    height: 200px;
-    background-color: aqua;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px -5px 3px 0px #eaecef;
 }
 </style>
